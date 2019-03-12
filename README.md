@@ -1,0 +1,2 @@
+# mobileAutoTester
+research on mobileAutoTester
