@@ -74,8 +74,9 @@ UI自动化测试面临的第一个问题，多技术，多平台。
 >- UI自动化测试面临的第一个问题，多技术，多平台。
 
 下面主要讨论界面回归测试和功能测试
-### PC端(headless chrome)
-1.截屏比对（局部、整页）
+### 一、web端(headless chrome)
+#### 界面ui视觉测试
+#### 1.截屏比对（局部、整页）
 工具选择和对比
 ##### 像素对比工具有哪些？
 
@@ -100,28 +101,30 @@ TrifleJS | IE  | [https://github.com/sdesalas/t...](https://github.com/sdesalas/
 
 PhantomJS 基于 Webkit 内核，不支持 Flash 的播放；SlimerJS 基于火狐的 Gecko 内核，支持 Flash播放，并且执行过程会有页面展示。
 
-2.dom结构对比加css样式对比
+#### 2.dom结构对比加css样式对比
 #####   page-monitor 
 > https://github.com/fouber/page-monitor
 
-#### RN自动化测试
+#### 二、RN自动化测试
+随着开发模式的逐渐成熟，对RN项目的自动化测试也在不断探索中慢慢完善， 最终选择了 Detox (by Wix) 做 E2E 自动化测试， Jest (FaceBook) + Enzyme (Airbnb) 做集成测试和单元测试。
 https://github.com/wix/detox
 
-### 客户端(多端)
-#### macaca进行移动端hybird自动化测试
+### 三、客户端(多端)
+#### 1.macaca进行移动端hybird自动化测试
 https://macacajs.com/zh/guide/computer-vision.html#%E5%85%B6%E5%AE%83%E6%96%B9%E6%A1%88
 >- macaca支持主流的移动技术平台iOS，Android，以及两大平台的混合运行时Webview，也支持以往的桌面端浏览器。
 >- macaca提供Node.js, Java, Python 三大主流的语言栈，方便工程师和所在团队选择合适的开发语言。
 >- Macaca 提供了标准化的驱动层，消除了各技术平台测试技术栈的差异。用户只需要遵从"W3C webdriver标准" 即可多端无忧，理解成本降低。
 
-#### Appium+WDA(webDriverAgent)
+#### 2.Appium+WDA(webDriverAgent)
+appium 是一个自动化测试开源工具，支持 iOS 平台和 Android 平台上的原生应用，web应用和混合应用。
 http://appium.io/
-### 用例断言
->- 测试框架：Mocha、Jasmine、Jest等
+#### 3.用例断言
+>- 测试框架：Mocha、Jasmine、Jest、cucumber，karma等
 >- 断言库：Should.js、chai、expect.js等
 >- 代码覆盖率：istanbul等
 
-### 持续集成
+#### 4.持续集成
 工具会根据用户提交配置自动运行并将结果返还给用户。
 如果能通过ci实现一系列的自动化部署测试等工作，使用上就更加顺畅了。
 
@@ -148,7 +151,7 @@ http://appium.io/
 >- ##### 测试配置化
 > 测试配置化能让用户使用和维护更加简单、大部分情况下只需要维护配置脚本即可
 
-##### 理想中的自动化流程：
+#### 5.理想中的自动化流程：
 当App(iOS/Android)，以及H5，任意部分存在代码提交时，系统能自动拉取最新代码进行部署并执行自动化回归测试，及时地将执行情况反馈给开发人员。
 
 ![image](http://pic4.zhimg.com/ce453792a0ad8ee395399d6299448c3b_r.jpg)
@@ -160,7 +163,7 @@ http://appium.io/
 > - 打包平台（Pack System）：实现iOS/Android的自动化构建；
 > - 持续集成流程打通：对Jenkins进行二次开发，与测试管理平台打通，实现全流程的持续集成自动化测试。
 
-##### 自动化测试工具对比
+#### 6.自动化测试工具对比
 
 ![image](http://ww4.sinaimg.cn/large/6b65a607jw1fai3td77vwj20rn0fiq72.jpg)
 
@@ -176,8 +179,6 @@ http://appium.io/
 1. 流程自动化的瓶颈?
 2. macaca有些文档并不是很详细
 3. 如果做全端的测试，我们本身对ios和Android代码和一些技术配置并不是很熟悉
-
-
 
 ## 参考资料
 > 前端自动化测试探索
@@ -200,6 +201,5 @@ https://testerhome.com/topics/6602
 
 > 如何自动化测试 React Native 
 https://tech.glowing.com/cn/react-native-automation-high-level-thoughts-and-e2e-testing/
-
 
 
