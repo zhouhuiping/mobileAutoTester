@@ -111,7 +111,11 @@ https://github.com/wix/detox
 
 ### 三、客户端(多端)
 #### 1.macaca进行移动端hybird自动化测试
-https://macacajs.com/zh/guide/computer-vision.html#%E5%85%B6%E5%AE%83%E6%96%B9%E6%A1%88
+
+>- https://macacajs.com/zh/guide/computer-vision.html#%E5%85%B6%E5%AE%83%E6%96%B9%E6%A1%88
+
+Macaca 是一套面向用户端软件的 **测试解决方案**，提供了自动化驱动，周边工具，集成方案，旨在解决终端上的测试、自动化、性能等方面的问题。
+
 >- macaca支持主流的移动技术平台iOS，Android，以及两大平台的混合运行时Webview，也支持以往的桌面端浏览器。
 >- macaca提供Node.js, Java, Python 三大主流的语言栈，方便工程师和所在团队选择合适的开发语言。
 >- Macaca 提供了标准化的驱动层，消除了各技术平台测试技术栈的差异。用户只需要遵从"W3C webdriver标准" 即可多端无忧，理解成本降低。
