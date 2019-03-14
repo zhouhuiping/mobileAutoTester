@@ -105,7 +105,7 @@ PhantomJS 基于 Webkit 内核，不支持 Flash 的播放；SlimerJS 基于火�
 #####   page-monitor 
 > https://github.com/fouber/page-monitor
 
-#### 二、RN自动化测试
+### 二、RN自动化测试
 随着开发模式的逐渐成熟，对RN项目的自动化测试也在不断探索中慢慢完善， 最终选择了 Detox (by Wix) 做 E2E 自动化测试， Jest (FaceBook) + Enzyme (Airbnb) 做集成测试和单元测试。
 https://github.com/wix/detox
 
